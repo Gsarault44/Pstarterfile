@@ -1,0 +1,146 @@
+@mixin border-radius($vert, $side, $radius) {
+	border-#{$vert}-#{$side}-radius: $radius;
+}
+
+@mixin bp($point) {
+	$mq-babyBear: "only screen and (min-width: #{$bp-babyBear}px)";
+	$mq-mamaBear: "only screen and (min-width: #{$bp-mamaBear}px)";
+	$mq-papaBear: "only screen and (min-width: #{$bp-papaBear}px)";
+	$mq-retinaBear: "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx)";
+
+	@if ($MQs) {
+		@if $point == baby-bear {
+	    	@media #{$mq-babyBear} { @content; }
+	  	}
+	  	@else if $point == mama-bear {
+	    	@media #{$mq-mamaBear} { @content; }
+	  	}
+	  	@else if $point == papa-bear {
+	    	@media #{$mq-papaBear}  { @content; }
+	  	}
+	  	@else if $point == retina-bear {
+	  		@media #{$mq-retinaBear}  { @content; }
+	  	}
+	}
+	@else {
+		@if $point != retina-bear {
+			@content;
+		}
+	}
+}
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 0, $color: #000, $inset:"") {
+	-webkit-box-shadow: $x $y $blur $color #{$inset};
+	-moz-box-shadow: 	$x $y $blur $color #{$inset};
+	box-shadow: 		$x $y $blur $color #{$inset};
+}
+
+@mixin float($dir: left) {
+	display:			inline;
+	float:				$dir;
+}
+
+@mixin font-size($pixelSize: $baseFontSize) {
+    font-size: #{$pixelSize}px;
+    font-size: #{$pixelSize / $baseFontSize}rem;
+}
+
+@mixin inline-block() {
+	display:			inline-block;
+	*display:			inline;
+	*zoom:				1;
+}
+
+@mixin linear-gradient($colStart, $colEnd) {
+	background:			-webkit-gradient(linear, left top, left bottom, from($colStart), to($colEnd)) 0 0;
+	background:			-moz-linear-gradient(top, $colStart, $colEnd) 0 0;
+	background:			-ms-linear-gradient(top, $colStart, $colEnd);
+	background:			-o-linear-gradient(top, $colStart, $colEnd);
+	//filter:			progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$colStart}, endColorstr=#{$colEnd});
+}
+
+@mixin linear-gradient-bg-image($url, $repeat, $x, $y, $colStart, $colEnd) {
+	background: url($url) $repeat $x $y;
+	background: url($url) $repeat $x $y, -webkit-gradient(linear, left top, left bottom, from($colStart), to($colEnd)) 0 0;
+	background: url($url) $repeat $x $y, -moz-linear-gradient(top, $colStart, $colEnd);
+	background: url($url) $repeat $x $y, -ms-linear-gradient(top, $colStart, $colEnd);
+	background: url($url) $repeat $x $y, -o-linear-gradient(top, $colStart, $colEnd);
+}
+
+@mixin opacity($value) {
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value * 100}); // ie8
+	filter: alpha(opacity=#{$value * 100}); // ie 6-7
+	opacity: $value; // good browsers
+}
+
+@mixin tap-highlight-color($color) {
+	-webkit-tap-highlight-color:	$color;
+	-moz-tap-highlight-color:		$color;
+	-o-tap-highlight-color:			$color;
+}
+
+@mixin transform($transform) {
+	-webkit-transform:	$transform;
+	-moz-transform:		$transform;
+	-ms-transform:		$transform;
+	-o-transform: 		$transform;
+	transform:			$transform;
+}
+
+@mixin transition($property, $duration, $function: linear) {	
+	-webkit-transition: $property $duration $function;
+	-moz-transition: 	$property $duration $function;
+	-ms-transition: 	$property $duration $function;
+	-o-transition: 		$property $duration $function;
+	transition: 		$property $duration $function;
+}
+
+@mixin width($elementWidth, $containerWidth) {
+	width: $elementWidth / $containerWidth * 100%;
+}
+
+@mixin wordBreak(){
+	-ms-word-wrap: break-all;
+	    word-wrap: break-all;
+	    word-wrap: break-word;
+}
+
+// Mixin for REM TO PX FALLBACK
+@function parseInt($n) { /* 2 */
+  @return $n / ($n * 0 + 1);
+}
+
+@mixin rem($property, $values) {
+  $px : (); /* 3 */
+  $rem: (); /* 3 */
+  
+  @each $value in $values { /* 4 */
+   
+    @if $value == 0 or $value == auto { /* 5 */
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+    
+    @else { 
+      $unit: unit($value);    /* 6 */
+      $val: parseInt($value); /* 6 */
+      
+      @if $unit == "px" {  /* 7 */
+        $px : append($px,  $value);
+        $rem: append($rem, ($val / 10 + rem));
+      }
+      
+      @if $unit == "rem" { /* 7 */
+        $px : append($px,  ($val * 10 + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+  
+  @if $px == $rem {     /* 8 */
+    #{$property}: $px;  /* 9 */
+  } @else {
+    #{$property}: $px;  /* 9 */
+    #{$property}: $rem; /* 9 */
+  }
+}

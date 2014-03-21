@@ -1,0 +1,73 @@
+.page-container { }
+
+/********************
+** Grid System
+********************/
+
+.full { }
+
+.two-thirds {
+
+	@include bp(mama-bear) { 
+		float: left; width: 66%; 
+	}
+}
+
+.half {
+
+	@include bp(baby-bear) { 
+		float: left; width: 50%; 
+	}
+}
+
+.third {
+
+	@include bp(mama-bear) { 
+		float: left; width: 33%; 
+	}
+}
+
+.quarter {
+
+	@include bp(baby-bear) { 
+		float: left; width: 50%; 
+	}
+	@include bp(mama-bear) { 
+		width: 25%; 
+	}
+}
+
+.faux-table {
+
+	> .two-thirds {
+
+		@include bp(mama-bear) { 
+			display: table-cell; float: none; vertical-align: top; 
+		}
+	}
+
+	> .half {
+
+		@include bp(baby-bear) { 
+			display: table-cell; float: none; vertical-align: top; 
+		}
+	}
+
+	> .third {
+
+		@include bp(mama-bear) { 
+			display: table-cell; float: none; vertical-align: top; 
+		}
+	}
+
+	> .quarter {
+
+		@include bp(baby-bear) { 
+			display: table-cell; float: none; vertical-align: top; 
+		}
+	}
+}
+
+/********************
+** Layouts
+********************/

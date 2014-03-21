@@ -1,0 +1,110 @@
+/********************
+** Base
+********************/
+
+* { margin: 0; border: 0; outline: 0; padding: 0; vertical-align: baseline; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+html { min-height: 100%; background: $c-body; font-size: 100%; -webkit-font-smoothing: antialiased; }
+body { min-height: 100%; color: $c-base; line-height: $baseLineHeight; font-family: $f-base; @include font-size($baseFontSize); }
+
+img { display: block; max-width: 100%; height: auto; -ms-interpolation-mode: bicubic; -moz-user-drag: -moz-none; -webkit-user-drag: none; user-drag: none; }
+
+a {
+
+    &.h1, &.h2, &.h3, &.h4, &.h5, &.h6 { }
+}
+
+blockquote { }
+
+:focus { outline: 0; }
+
+/********************
+** Paragraph and list style resets
+********************/
+
+//Paragraph and list style resets
+p, dl, ol, ul  { margin-bottom: $baseLineHeight; line-height: $baseLineHeight; }
+ul, ol { margin: 0 0 $baseLineHeight 0; padding: 0 0 0 $baseLineHeight; }
+li ul, li ol { margin: 0; }
+
+/********************
+** Forms
+********************/
+
+input,
+select,
+textarea { display: block; -webkit-appearance: none; }
+
+label, .label { }
+
+/********************
+** Headers
+********************/
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 { display: block; font-weight: normal; }
+
+h1, .h1 { 
+	@include rem(font-size, 2.4rem);
+	@include rem(line-height , 2.4rem);
+	@include bp(baby-bear) {
+		@include rem(font-size, 3rem);
+		@include rem(line-height , 3rem);
+	}
+}
+h2, .h2 { 
+	@include rem(font-size, 1.8rem);
+	@include rem(line-height , 1.8rem);
+	@include bp(baby-bear) {
+		@include rem(font-size, 2rem);
+		@include rem(line-height , 2rem);
+	}
+}
+h3, .h3 { 
+	@include rem(font-size, 1.6rem);
+	@include rem(line-height , 1.6rem);
+	@include bp(baby-bear) {
+		@include rem(font-size, 1.8rem);
+		@include rem(line-height , 1.8rem);
+	}
+}
+h4, .h4 { 
+	@include rem(font-size, 1.6rem);
+	@include rem(line-height , 1.6rem);
+	@include bp(baby-bear) {
+		@include rem(font-size, 1.6rem);
+		@include rem(line-height , 1.6rem);
+	}
+}
+h5, .h5 { 
+	@include rem(font-size, 1.6rem);
+	@include rem(line-height , 1.6rem);
+	@include bp(baby-bear) {
+		@include rem(font-size, 1.6rem);
+		@include rem(line-height , 1.6rem);
+	}
+}
+h6, .h6 { 
+	@include rem(font-size, 1.6rem);
+	@include rem(line-height , 1.6rem);
+	@include bp(baby-bear) {
+		@include rem(font-size, 1.6rem);
+		@include rem(line-height , 1.6rem);
+	}
+}
+
+.swatches {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	align-content: stretch;
+	list-style-type: none;
+	padding:0; 
+	.swatch {
+			padding:20px;
+			width:250px;
+	}
+}
+
