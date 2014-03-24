@@ -1,0 +1,53 @@
+.connecting-block {
+	display: inline-block;
+	width:300px;
+	text-align: center;
+	@include bp(baby-bear) {
+		border-right:1px solid $penn-grey-01;
+	}	
+	img {
+		margin:0 auto;
+	}
+	h1 {
+		text-transform: uppercase;
+	}
+	p {
+
+	}
+}
+
+
+.news-block {
+	li {
+		display: inline-block;
+		max-width: 300px;
+	}
+}
+
+/********************
+** Feature Block (3 Blocks wide)
+********************/
+.featured {
+	width: 100%;
+	@include bp(baby-bear) {
+		width: 33%;
+	}
+}
+.main-feature-block {
+	background:red;
+	width: 100%;
+	@include bp(baby-bear) {
+		width:66%;
+	}
+}
+
+.sub-feature-block {
+	background:blue;
+
+}
+.standard-feature-block {
+	background:green;
+}
+.special-feature-block {
+	background:cyan;	
+}

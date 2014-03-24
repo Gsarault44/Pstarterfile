@@ -10,6 +10,30 @@
 /********************
 ** Images
 ********************/
+@font-face {
+  font-family: "ArnoPro Regular";
+  src: url(fonts/arnopro-regular/ArnoPro-Regular.otf) format("truetype"); }
+
+@font-face {
+  font-family: "Brandon Grotesque bold";
+  src: url(fonts/brandon-grotesque/Brandon_bld.otf) format("truetype"); }
+
+@font-face {
+  font-family: "Brandon Grotesque light";
+  src: url(fonts/brandon-grotesque/Brandon_light.otf) format("truetype"); }
+
+@font-face {
+  font-family: "Brandon Grotesque regular";
+  src: url(fonts/brandon-grotesque/Brandon_reg.otf) format("truetype"); }
+
+@font-face {
+  font-family: "Brandon Grotesque regular italic";
+  src: url(fonts/brandon-grotesque/Brandon_reg_it.otf) format("truetype"); }
+
+@font-face {
+  font-family: "Dense Regular";
+  src: url(fonts/dense-regular/Dense-Regular.otf) format("opentype"); }
+
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -120,7 +144,7 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin-bottom: 0.67em; }
 
 /**
  * Address styling not present in IE 8/9.
@@ -427,7 +451,8 @@ p, dl, ol, ul {
 
 ul, ol {
   margin: 0 0 1.5em 0;
-  padding: 0 0 0 1.5em; }
+  padding: 0 0 0 0;
+  list-style-type: none; }
 
 li ul, li ol {
   margin: 0; }
@@ -702,18 +727,42 @@ h6, .h6 {
   /* 9 */ }
 
 .swatches {
+  list-style-type: none;
+  padding: 0; }
+  .swatches .swatch {
+    padding: 20px;
+    width: 250px; }
+
+/********************
+** Global
+********************/
+.phark {
+  display: none; }
+
+/********************
+** Layout
+********************/
+.page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; }
+
+.main-content {
+  position: relative;
+  margin-left: 70px; }
+
+.grid {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  align-content: stretch;
-  list-style-type: none;
-  padding: 0; }
-  .swatches .swatch {
-    padding: 20px;
-    width: 250px; }
+  flex-flow: row wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-end;
+  align-content: flex-end; }
 
 .unstyled-list {
   margin: 0;
@@ -801,16 +850,198 @@ h6, .h6 {
 ** Layouts
 ********************/
 .btn {
-  padding: 20px 20px;
+  padding: 19px;
   border: 1px solid #ccc;
-  display: inline-block; }
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase; }
+  .btn:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #f47a0b;
+    border-bottom: 5px solid transparent; }
 
 .buttons ul {
   list-style-type: none; }
 
+.button-two {
+  border: none;
+  background: none;
+  color: black; }
+  .button-two:after {
+    border-left: 5px solid #00236f; }
+
+.button-three {
+  border: none;
+  background: none;
+  color: black; }
+
+/********************
+** Search
+********************/
+input.search-submit {
+  padding: 19px;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+  color: white;
+  background: #141924;
+  display: inline-block;
+  box-shadow: none; }
+
+input.search-input {
+  padding: 19px;
+  background: #141924;
+  opacity: 0.8;
+  display: inline-block;
+  color: white; }
+  input.search-input:-moz-placeholder, input.search-input::-moz-placeholder, input.search-input::-webkit-input-placeholder, input.search-input:-ms-input-placeholder {
+    font-style: italic; }
+
+input.search-input::-webkit-input-placeholder {
+  font-style: italic; }
+
+input.search-input:-moz-placeholder {
+  /* Firefox 18- */
+  font-style: italic; }
+
+input.search-input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-style: italic; }
+
+input.search-input:-ms-input-placeholder {
+  font-style: italic; }
+
 /********************
 ** LOGO
 ********************/
+/********************
+** Side Nav
+********************/
+.sidenav {
+  background: #141924;
+  position: fixed;
+  height: 100%; }
+  .sidenav .logo {
+    background: url(../images/nav-logo.png) no-repeat 50% 50%;
+    height: 110px;
+    border-bottom: 1px solid #87898d;
+    padding-bottom: 20px;
+    margin-bottom: 0; }
+  .sidenav nav li a {
+    margin: 0 auto;
+    display: block;
+    width: 70px;
+    height: 55px;
+    background: url(../images/sprites/nav-sprite.png) no-repeat 0 0; }
+  .sidenav nav .nav-1 {
+    background-position: 8px 11px; }
+  .sidenav nav .nav-2 {
+    background-position: 8px -40px; }
+  .sidenav nav .nav-3 {
+    background-position: 11px -110px; }
+  .sidenav nav .nav-4 {
+    background-position: 6px -182px; }
+  .sidenav nav .nav-5 {
+    background-position: 8px -250px; }
+
+.footer {
+  background: #1d2438;
+  color: #999da8;
+  margin-left: 70px; }
+  .footer a {
+    color: #999da8;
+    text-decoration: none; }
+  .footer .footer-wrapper {
+    max-width: 1270px;
+    margin: 0 auto; }
+  .footer .footer-block {
+    vertical-align: top;
+    display: inline-block; }
+  .footer .info {
+    background: url(../images/nav-logo.png) no-repeat 100% 10%;
+    background-size: 60px;
+    border-right: 1px solid #999da8;
+    padding-right: 30px; }
+    .footer .info .logo {
+      width: 130px;
+      margin-bottom: 0;
+      color: white;
+      text-align: right;
+      text-transform: uppercase;
+      /* 3 */
+      /* 3 */
+      /* 4 */
+      /* 6 */
+      /* 6 */
+      /* 7 */
+      font-size: 13px;
+      /* 9 */
+      font-size: 1.3rem;
+      /* 9 */
+      /* 3 */
+      /* 3 */
+      /* 4 */
+      /* 6 */
+      /* 6 */
+      /* 7 */
+      line-height: 13px;
+      /* 9 */
+      line-height: 1.3rem;
+      /* 9 */ }
+    .footer .info .street, .footer .info .city, .footer .info .phone, .footer .info .email {
+      margin-bottom: 0;
+      text-align: right; }
+  .footer .legal p {
+    margin: 0; }
+  .footer .legal h1 {
+    margin: 0; }
+    .footer .legal h1 .penn-u-logo {
+      background: url(../images/Penn-U-Logo.png) no-repeat 100% 50%;
+      display: inline-block;
+      height: 60px;
+      width: 135px; }
+
+.connecting-block {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  border-right: 1px solid #87898d; }
+  .connecting-block img {
+    margin: 0 auto; }
+  .connecting-block h1 {
+    text-transform: uppercase; }
+
+.news-block li {
+  display: inline-block;
+  max-width: 300px; }
+
+/********************
+** Feature Block (3 Blocks wide)
+********************/
+.featured {
+  width: 100%;
+  width: 33%; }
+
+.main-feature-block {
+  background: red;
+  width: 100%;
+  width: 66%; }
+
+.sub-feature-block {
+  background: blue; }
+
+.standard-feature-block {
+  background: green; }
+
+.special-feature-block {
+  background: cyan; }
+
 /*@media only print { 
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
   .header, .footer, .sidebar, img, form { display: none !important; }

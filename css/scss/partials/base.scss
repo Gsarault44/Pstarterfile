@@ -23,7 +23,7 @@ blockquote { }
 
 //Paragraph and list style resets
 p, dl, ol, ul  { margin-bottom: $baseLineHeight; line-height: $baseLineHeight; }
-ul, ol { margin: 0 0 $baseLineHeight 0; padding: 0 0 0 $baseLineHeight; }
+ul, ol { margin: 0 0 $baseLineHeight 0; padding: 0 0 0 0; list-style-type: none; }
 li ul, li ol { margin: 0; }
 
 /********************
@@ -93,13 +93,6 @@ h6, .h6 {
 }
 
 .swatches {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	align-content: stretch;
 	list-style-type: none;
 	padding:0; 
 	.swatch {
@@ -108,3 +101,37 @@ h6, .h6 {
 	}
 }
 
+/********************
+** Global
+********************/
+.phark {
+	display:none;
+}
+
+/********************
+** Layout
+********************/
+.page {
+	width: 100%;
+	max-width: 100%;
+	overflow-x:hidden;
+}
+.main-content {
+	position: relative;
+	margin-left:70px;
+}
+.grid {
+	@include bp(baby-bear) {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		-webkit-flex-direction: row;
+	    flex-direction: row;
+	    -webkit-align-content: flex-end;
+	    align-content: flex-end;
+	}
+}

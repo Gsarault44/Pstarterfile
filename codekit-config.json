@@ -25,17 +25,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/css\/scss\/partials\/grid.scss" : {
+    "\/images\/Penn-U-Logo.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/partials\/grid.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/grid.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/images\/Penn-U-Logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/Penn-U-Logo.png",
+      "initialSize" : 8043,
+      "fileType" : 8192
     },
     "\/css\/scss\/partials\/base.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -46,6 +45,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/base.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/scss\/partials\/grid.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/grid.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/grid.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -83,13 +94,24 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/images\/sprites\/nav-sprite.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/sprites\/nav-sprite.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/sprites\/nav-sprite.png",
+      "initialSize" : 8027,
+      "fileType" : 8192
+    },
     "\/css\/style.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
     "\/css\/scss\/_variables.scss" : {
@@ -122,7 +144,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/style.min.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
     "\/css\/scss\/_fonts.scss" : {
@@ -134,18 +156,6 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_fonts.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/css\/scss\/style.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/css\/scss\/style.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/style.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -173,6 +183,18 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/css\/scss\/style.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/css\/scss\/style.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/css\/scss\/partials\/header.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -182,6 +204,38 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/header.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/images\/nav-logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/nav-logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/nav-logo.png",
+      "initialSize" : 4449,
+      "fileType" : 8192
+    },
+    "\/style-guide\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/style-guide\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/css\/scss\/partials\/blocks.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/blocks.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/blocks.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -235,7 +289,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
     "\/css\/scss\/partials\/utility.scss" : {

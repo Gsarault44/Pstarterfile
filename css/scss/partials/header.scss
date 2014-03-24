@@ -5,3 +5,48 @@
 ********************/
 
 .logo { }
+
+
+
+/********************
+** Side Nav
+********************/
+.sidenav {
+	background:$penn-blue-01;
+	position: fixed;
+	height: 100%;
+	.logo {
+		background:url(../images/nav-logo.png) no-repeat 50% 50%;	
+		height: 110px;
+		border-bottom: 1px solid $penn-grey-01;
+		padding-bottom: 20px;
+		margin-bottom: 0;
+	}
+	nav {
+		li {
+			a {
+				margin:0 auto;
+				display: block;
+				width: 70px;
+				height:55px;
+				background:url(../images/sprites/nav-sprite.png) no-repeat 0 0;
+			}
+		}
+		.nav-1 {
+			background-position: 8px 11px;
+		}
+		.nav-2 {
+			background-position: 8px -40px;
+		}
+		.nav-3 {
+			background-position: 11px -110px;
+		}
+		.nav-4 {
+			background-position: 6px -182px;
+		}
+		.nav-5 {
+			background-position: 8px -250px;
+		}
+
+	}
+}

@@ -1,7 +1,21 @@
 .btn { 
-	padding:20px 20px;	
+	padding:19px;	
 	border:1px solid #ccc;
 	display: inline-block;
+	background: rgba(0, 0, 0, 0.4);;
+	text-decoration: none;
+	color:$penn-white;
+	text-transform: uppercase;
+	&:after {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin-left: 10px;	
+			border-top: 5px solid transparent;
+			border-left: 5px solid $penn-orange;
+			border-bottom: 5px solid transparent;
+	}
 }
 .buttons {
 	ul {
@@ -12,8 +26,54 @@
 
 }
 .button-two {
-
+	border:none;
+	background:none;
+	color:$penn-black;
+	&:after {
+		border-left: 5px solid $penn-blue-02;
+	}
 }
 .button-three {
+	border:none;
+	background:none;
+	color:$penn-black;
+}
 
+/********************
+** Search
+********************/
+input.search-submit {
+	padding:19px;	
+	border:1px solid #ccc;
+	text-transform: uppercase;
+	color:$penn-white;
+	background: $penn-blue-01;
+	display: inline-block;
+	box-shadow: none;
+}
+input.search-input {
+	padding:19px;
+	background:$penn-blue-01;
+	opacity: 0.8;
+	display: inline-block;
+	color:$penn-white;
+	
+	&:-moz-placeholder,&::-moz-placeholder,&::-webkit-input-placeholder, &:-ms-input-placeholder {
+		font-style: italic;
+	}
+}
+input.search-input::-webkit-input-placeholder {
+	font-style: italic;
+}
+
+input.search-input:-moz-placeholder { /* Firefox 18- */
+	font-style: italic;
+}
+
+input.search-input::-moz-placeholder {  /* Firefox 19+ */
+	font-style: italic; 
+}
+
+input.search-input:-ms-input-placeholder {  
+	font-style: italic; 
 }
