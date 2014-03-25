@@ -6,15 +6,19 @@
 	text-decoration: none;
 	color:$penn-white;
 	text-transform: uppercase;
+	font-family: "Brandon Grotesque bold";
+	@include rem(font-size, 0.8rem);
+	@include rem(line-height , 0.8rem);
 	&:after {
 			content: "";
 			display: inline-block;
 			width: 0;
 			height: 0;
-			margin-left: 10px;	
-			border-top: 5px solid transparent;
-			border-left: 5px solid $penn-orange;
-			border-bottom: 5px solid transparent;
+			margin-left: 10px;
+			margin-bottom: 2px;	
+			border-top: 4px solid transparent;
+			border-left: 7px solid $penn-orange;
+			border-bottom: 4px solid transparent;
 	}
 }
 .buttons {
@@ -29,11 +33,14 @@
 	border:none;
 	background:none;
 	color:$penn-black;
+	padding:0;
+	font-weight: 400;
 	&:after {
 		border-left: 5px solid $penn-blue-02;
 	}
 }
 .button-three {
+	padding:19px 0; 
 	border:none;
 	background:none;
 	color:$penn-black;
@@ -43,21 +50,32 @@
 ** Search
 ********************/
 input.search-submit {
-	padding:19px;	
-	border:1px solid #ccc;
+	padding:17px;	
+	border:1px solid $penn-grey-01;
 	text-transform: uppercase;
 	color:$penn-white;
-	background: $penn-blue-01;
+	background: transparent;
 	display: inline-block;
 	box-shadow: none;
+
+	@include rem(font-size, 0.7rem);
+	font-family: "Brandon Grotesque bold";
+	@include bp(baby-bear) {
+		width: 18%;
+		@include rem(font-size, 0.8rem);
+	}
 }
 input.search-input {
-	padding:19px;
-	background:$penn-blue-01;
+	padding:17px;
+	background:$penn-blue-07;
 	opacity: 0.8;
 	display: inline-block;
 	color:$penn-white;
-	
+	width:80%;
+	@include rem(font-size, 0.7rem);
+	@include bp(baby-bear) {
+		@include rem(font-size, 0.9rem);
+	}
 	&:-moz-placeholder,&::-moz-placeholder,&::-webkit-input-placeholder, &:-ms-input-placeholder {
 		font-style: italic;
 	}

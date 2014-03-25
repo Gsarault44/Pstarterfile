@@ -2,6 +2,28 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
+    "\/js\/functionality.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/functionality.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/functionality.min-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/sprites\/icon-sprite.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/sprites\/icon-sprite.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/sprites\/icon-sprite.png",
+      "initialSize" : 7719,
+      "fileType" : 8192
+    },
     "\/js\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -13,41 +35,6 @@
       "outputAbbreviatedPath" : "\/js\/jquery.min-ck.js",
       "fileType" : 64
     },
-    "\/css\/scss\/_styles.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/_styles.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_styles.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/images\/Penn-U-Logo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/Penn-U-Logo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/Penn-U-Logo.png",
-      "initialSize" : 8043,
-      "fileType" : 8192
-    },
-    "\/css\/scss\/partials\/base.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/partials\/base.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/base.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/css\/scss\/partials\/grid.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -57,6 +44,94 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/grid.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
+    },
+    "\/images\/large-logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/large-logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/large-logo.png",
+      "initialSize" : 8080,
+      "fileType" : 8192
+    },
+    "\/css\/scss\/partials\/buttons.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/buttons.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/buttons.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/scss\/_fonts.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/_fonts.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_fonts.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/style-guide\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/style-guide\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/js\/plugins.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins.min-ck.js",
+      "fileType" : 64
+    },
+    "\/css\/scss\/style.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/css\/scss\/style.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/scss\/_normalize.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/_normalize.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_normalize.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -71,103 +146,15 @@
       "outputAbbreviatedPath" : "\/js\/functionality-ck.js",
       "fileType" : 64
     },
-    "\/js\/plugins.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins.min-ck.js",
-      "fileType" : 64
-    },
-    "\/css\/scss\/partials\/footer.scss" : {
+    "\/css\/scss\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/partials\/footer.scss",
+      "inputAbbreviatedPath" : "\/css\/scss\/_mixins.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/footer.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/images\/sprites\/nav-sprite.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/sprites\/nav-sprite.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/sprites\/nav-sprite.png",
-      "initialSize" : 8027,
-      "fileType" : 8192
-    },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
-    "\/css\/scss\/_variables.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/_variables.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_variables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/css\/scss\/partials\/buttons.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/partials\/buttons.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/buttons.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/css\/style.min.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.min.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
-    "\/css\/scss\/_fonts.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/_fonts.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_fonts.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/css\/scss\/style.min.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/css\/scss\/style.min.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/style.min.css",
+      "outputAbbreviatedPath" : "\/css\/_mixins.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -183,27 +170,59 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/css\/scss\/style.scss" : {
+    "\/images\/Penn-U-Logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/css\/scss\/style.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/Penn-U-Logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/Penn-U-Logo.png",
+      "initialSize" : 8043,
+      "fileType" : 8192
     },
-    "\/css\/scss\/partials\/header.scss" : {
+    "\/css\/scss\/partials\/utility.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/partials\/header.scss",
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/utility.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/header.css",
+      "outputAbbreviatedPath" : "\/css\/utility.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/style.min.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.min.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
+    },
+    "\/css\/scss\/_styles.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/_styles.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_styles.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/scss\/style.min.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/css\/scss\/style.min.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/style.min.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -218,71 +237,6 @@
       "initialSize" : 4449,
       "fileType" : 8192
     },
-    "\/style-guide\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/style-guide\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/css\/scss\/partials\/blocks.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/partials\/blocks.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/blocks.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/js\/functionality.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/functionality.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/functionality.min-ck.js",
-      "fileType" : 64
-    },
-    "\/css\/scss\/partials\/misc.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/partials\/misc.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/misc.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/css\/scss\/_mixins.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/_mixins.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_mixins.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -292,15 +246,27 @@
       "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
-    "\/css\/scss\/partials\/utility.scss" : {
+    "\/css\/scss\/partials\/base.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/partials\/utility.scss",
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/base.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/utility.css",
+      "outputAbbreviatedPath" : "\/css\/base.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/scss\/partials\/footer.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/footer.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/footer.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -315,17 +281,48 @@
       "outputAbbreviatedPath" : "\/js\/modernizr.min-ck.js",
       "fileType" : 64
     },
-    "\/css\/scss\/_normalize.scss" : {
+    "\/images\/banner-header-01.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/banner-header-01.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/banner-header-01.png",
+      "initialSize" : 311869,
+      "fileType" : 8192
+    },
+    "\/css\/scss\/partials\/blocks.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/scss\/_normalize.scss",
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/blocks.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_normalize.css",
+      "outputAbbreviatedPath" : "\/css\/blocks.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/images\/sprites\/nav-sprite.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/sprites\/nav-sprite.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/sprites\/nav-sprite.png",
+      "initialSize" : 8027,
+      "fileType" : 8192
     },
     "\/css\/scss\/partials\/js-mediaquery-detection.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -336,6 +333,42 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/js-mediaquery-detection.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/scss\/_variables.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/_variables.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_variables.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/scss\/partials\/misc.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/misc.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/misc.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/css\/scss\/partials\/header.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/scss\/partials\/header.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/header.css",
       "fileType" : 4,
       "debugStyle" : 0
     }

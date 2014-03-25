@@ -44,8 +44,8 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 { display: block; font-weight: normal; }
 
 h1, .h1 { 
-	@include rem(font-size, 2.4rem);
-	@include rem(line-height , 2.4rem);
+	@include rem(font-size, 1.7rem);
+	@include rem(line-height , 1.7rem);
 	@include bp(baby-bear) {
 		@include rem(font-size, 3rem);
 		@include rem(line-height , 3rem);
@@ -96,8 +96,8 @@ h6, .h6 {
 	list-style-type: none;
 	padding:0; 
 	.swatch {
-			padding:20px;
-			width:250px;
+		padding:20px;
+		width:250px;
 	}
 }
 
@@ -118,7 +118,11 @@ h6, .h6 {
 }
 .main-content {
 	position: relative;
-	margin-left:70px;
+	margin-left:60px;
+	max-width: 1200px;
+	@include bp(baby-bear) {
+		margin-left:70px;
+	}
 }
 .grid {
 	@include bp(baby-bear) {
@@ -129,9 +133,5 @@ h6, .h6 {
 		display: flex;
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
-		-webkit-flex-direction: row;
-	    flex-direction: row;
-	    -webkit-align-content: flex-end;
-	    align-content: flex-end;
 	}
 }

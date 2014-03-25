@@ -1,45 +1,108 @@
 .footer { 
 	background: $penn-blue-05;
 	color:$penn-grey-02;
-	margin-left: 70px;
+	margin-left: 50px;
+	max-width: 1200px;
+	font-family: "Brandon Grotesque bold";
+	@include bp(baby-bear) {
+		margin-left: 70px;
+	}
 	a {
 		color:$penn-grey-02;
 		text-decoration: none;
 	}
 	.footer-wrapper {
-		max-width: 1270px;
+		
 		margin:0 auto; 	
 	}
 	.footer-block {
 		vertical-align: top;
-		display: inline-block;	
+		display: inline-block;
+		@include rem(font-size, 0.8rem);
+		@include rem(line-height , 0.8rem);
 	}
 	.info {
-		background:url(../images/nav-logo.png) no-repeat 100% 10%;	
-		background-size: 60px;
-		border-right: 1px solid $penn-grey-02;
-		padding-right: 30px;
+		width: 100%;
+		border-bottom: 1px solid $penn-grey-04;
+		@include bp(mama-bear) {
+			width: 24%;	
+			padding:20px;
+			border-bottom: none;
+		}
 		.logo {
-			width: 130px;
 			margin-bottom: 0;
 			color:$penn-white;
 			text-align: right;
 			text-transform: uppercase;
-			@include rem(font-size, 1.3rem);
-			@include rem(line-height , 1.3rem);
+			background:url(../images/nav-logo.png) no-repeat 100% 10%;	
+			background-size: 60px;
+			height: 86px;
+			padding:10px 60px 10px 0;
+			@include rem(font-size, 1.2rem);
+			@include rem(line-height , 1.2rem);
+			width:200px;
+			margin:0 auto;
+			@include bp(mama-bear) {
+				width: auto;
+			}
 		}
 		.street, .city, .phone, .email {
+			padding-right: 30px;
 			margin-bottom: 0;
-			text-align: right;
+			text-align: center;
+			@include bp(mama-bear) {
+				text-align: right;
+			}
+		}
+		.email {
+			color:$penn-blue-06;
+			font-weight: 600;
+		}
+	}
+	.footer-block-wrapper {
+		width: 100%;
+		padding:20px; 
+		text-transform: uppercase;
+		border-bottom: 1px solid $penn-grey-04;
+		text-align: center;
+		@include bp(mama-bear) {
+			text-align: left;
+			width: 48%;	
+			border-right: 1px solid $penn-grey-04;
+			border-left: 1px solid $penn-grey-04;
+			border-bottom:none;
 		}
 	}
 	.footer-block .nav {
-
+		width:100%;
+		@include bp(baby-bear) {
+			width: 48.5%;	
+			border-right: 1px solid $penn-grey-04;
+			margin-bottom: 50px;
+		}
+		li {
+			margin-bottom: 5px;
+		}
 	}
 	.footer-block .sub-nav {
-
+		width:100%;
+		@include bp(baby-bear) {
+			padding:0 20px;
+			width:48.5%;
+		}
+		li {
+			margin-bottom: 5px;
+		}
 	}
 	.legal {
+		display: block;
+		text-align: center;
+		padding:20px;
+			@include bp(mama-bear) {
+				width: 25%;
+				text-align: left;
+				display:inline-block;
+			}
 		p {
 			margin:0;
 		}
@@ -50,6 +113,12 @@
 				display: inline-block;
 				height: 60px;
 				width:135px;
+			}
+		}
+		li {
+			margin-bottom: 5px;
+			a {
+				text-transform: uppercase;
 			}
 		}
 	}

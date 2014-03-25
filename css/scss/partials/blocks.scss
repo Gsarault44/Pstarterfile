@@ -1,53 +1,262 @@
 .connecting-block {
-	display: inline-block;
-	width:300px;
+	display: block;
 	text-align: center;
-	@include bp(baby-bear) {
+	margin:0 auto;
+	width: 100%;
+	border-bottom:1px solid $penn-grey-01;
+	@include bp(tiny-bear) {
+		max-width: 50%;
+		margin:0;
+		float: left;
 		border-right:1px solid $penn-grey-01;
-	}	
-	img {
-		margin:0 auto;
+		
 	}
+	@include bp(baby-bear) {
+		max-width: 25%;
+		border-bottom: 0;
+		padding:20px 0;
+	}	
 	h1 {
+		color:$penn-grey-03;
 		text-transform: uppercase;
+		font-family: "Dense Regular";
+		&:before {
+			content:"";
+			display: block;
+			width: 45px;
+			height:60px;
+			margin:0 auto; 
+			background: url(../images/sprites/nav-sprite.png) no-repeat 0 -320px; 
+		}
 	}
 	p {
-
+		margin:0 auto; 
+		color:$penn-grey-01;	
+		font-style: italic;
+		@include rem(font-size, 0.9rem);
+		@include rem(letter-spacing, 0.01rem);  	
+		font-family: "Brandon Grotesque reg";
+		font-weight: 500;
+		@include bp(baby-bear) {
+			width: 150px;
+		}	
+	}
+	.more {
+		a {
+			@include rem(font-size, 0.8rem);
+			font-family: "Brandon Grotesque bold";	
+		}
 	}
 }
+/********************
+** News Blocks
+********************/
 
-
-.news-block {
-	li {
-		display: inline-block;
-		max-width: 300px;
+.news {
+	display: block;
+	padding:50px 30px;
+	@include bp(baby-bear) {
+		padding:100px 60px;
+	}
+	.section-title {
+		color:$penn-blue-06;
+		font-family: "Dense Regular";
+		text-transform: uppercase;
+		@include rem(font-size, 1.6rem);
+		@include rem(line-height , 1.6rem);
+		&:after {
+			content:"";
+			display: block;
+			height:1px;
+			width: 100%;
+			background:$penn-grey-06;
+			opacity: .5;
+		}
+	}
+	.news-feed {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		justify-content: space-around;
+		.news-block {
+			li {
+				margin-bottom: 20px;
+				@include bp(baby-bear) {
+					padding: 20px;
+				}
+				& + li {
+					border-bottom:1px solid $penn-grey-06;
+					@include bp(baby-bear) {
+						border-left:1px solid $penn-grey-06;
+						border-bottom: none;
+					}
+				}
+				display: inline-block;
+				@include bp(baby-bear) {
+					width:210px;
+				}
+				h1 {
+					font-family: "Brandon Grotesque bold";
+					@include rem(font-size, 1.4rem);
+					@include rem(line-height , 1.4rem);
+					margin-bottom: 10px;
+				}
+				p {
+					font-family: "Brandon Grotesque reg";
+					color:$penn-black-03;
+					@include rem(font-size, 1rem);
+					@include rem(line-height , 1.2rem);
+				}
+				.time-stamp {
+					font-family: "Brandon Grotesque bold italic";
+					color:$penn-grey-01;
+					font-weight: 100;
+					@include rem(font-size, .9rem);
+					@include rem(line-height , .9rem);	
+					margin-bottom: 10px;
+				}
+			}
+		}
 	}
 }
 
 /********************
 ** Feature Block (3 Blocks wide)
 ********************/
-.featured {
-	width: 100%;
-	@include bp(baby-bear) {
-		width: 33%;
+.featured-area {
+	height: 400px;
+	color:$penn-white;
+	img {
+		position: absolute;
+		left:0;
+		top:0;
+		z-index: -1;
+		width: 100%;
+		height:100%;
+	}	
+	.main-feature-block {
+		position: relative;
+		padding:80px 40px;
+		display: block;
+		float:left;
+		clear: both;
+		background:url(http://placekitten.com/800/400)no-repeat 0 0;
+		background-size: cover;
+		width: 100%;
+		height:400px;
+		@include bp(baby-bear) {
+			width:66.666%;
+		}
+		h1 {
+			font-family: "Dense Regular";
+			text-transform: uppercase;
+			@include rem(font-size, 1.6rem);
+			@include rem(line-height , 1.6rem);
+			&:after {	
+				content:"";
+				display: inline-block;
+				height: 55px;
+				width:55px;
+				background:url(../images/sprites/icon-sprite.png) no-repeat -22px 0;
+			}
+		}
+		h2 {
+			font-family: "Brandon Grotesque bold";
+			max-width: 350px;
+			@include rem(font-size, 2rem);
+			@include rem(line-height , 2rem);
+			margin-bottom: 30px;
+		}
 	}
-}
-.main-feature-block {
-	background:red;
-	width: 100%;
-	@include bp(baby-bear) {
-		width:66%;
+	.featured {
+		padding:80px 20px;
+		display: block;
+		float:left;
+		width: 100%;
+		height:400px;
+		position: relative;
+		@include bp(baby-bear) {
+			width: 33.333%;
+		}
 	}
-}
-
-.sub-feature-block {
-	background:blue;
-
-}
-.standard-feature-block {
-	background:green;
-}
-.special-feature-block {
-	background:cyan;	
+	.sub-feature-block {
+		img {
+			position: absolute;
+			left:0;
+			top:0;
+			z-index: -1;
+			width: 100%;
+			height:100%;
+		}	
+		h1 {
+			font-family: "Dense Regular";
+			text-transform: uppercase;
+			@include rem(font-size, 1.5rem);
+			@include rem(line-height , 1.5rem);	
+			&:after {	
+				content:"";
+				display: inline-block;
+				height: 55px;
+				width:55px;
+				background:url(../images/sprites/icon-sprite.png) no-repeat -22px -91px;
+			}
+		}
+		h2 {
+			font-family: "Brandon Grotesque bold";
+			max-width: 70%;
+			@include rem(font-size, 2rem);
+			@include rem(line-height , 2rem);
+			margin-bottom: 30px;
+		}
+	}
+	.standard-feature-block {
+		padding:80px 10px 80px 20px;
+		@include bp(mama-bear) { 
+			padding:80px 60px 0 30px;	
+		}
+		img {
+			position: absolute;
+			left:0;
+			top:0;
+			z-index: -1;
+			width: 100%;
+			height:100%;
+		}	
+		h1 {
+			font-family: "Brandon Grotesque bold";
+			max-width:85%;
+			@include rem(font-size, 1.8rem);
+			@include rem(line-height , 1.8rem);
+			margin-bottom: 30px;
+			@include bp(mama-bear) {
+				@include rem(font-size, 2rem);
+				@include rem(line-height , 2rem);
+			}
+		}	
+	}
+	.special-feature-block {
+		background:$penn-grey-05;	
+		h1 {
+			font-family: "Dense Regular";
+			text-transform: uppercase;
+			color:$penn-blue-06;
+			font-weight: 400;
+			@include rem(font-size, 1.5rem);
+			@include rem(letter-spacing , .1rem);
+		}
+		h2 {
+			color:$penn-black-02;
+			font-family: "Brandon Grotesque light";
+			@include rem(font-size, 1.5rem);
+			@include rem(line-height , 1.9rem);
+			margin-bottom: 30px;
+			@include bp(mama-bear) {
+				@include rem(font-size, 2rem);
+				@include rem(line-height , 2.2rem);
+			}
+		}
+	}
 }

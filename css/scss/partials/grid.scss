@@ -9,7 +9,7 @@
 .two-thirds {
 
 	@include bp(mama-bear) { 
-		float: left; width: 66%; 
+		float: left; width: 66.666666666%; 
 	}
 }
 
@@ -23,16 +23,16 @@
 .third {
 
 	@include bp(mama-bear) { 
-		float: left; width: 33%; 
+		float: left; width: 33.333333333%; 
 	}
 }
 
 .quarter {
 
-	@include bp(baby-bear) { 
+	@include bp(tiny-bear) { 
 		float: left; width: 50%; 
 	}
-	@include bp(mama-bear) { 
+	@include bp(baby-bear) { 
 		width: 25%; 
 	}
 }

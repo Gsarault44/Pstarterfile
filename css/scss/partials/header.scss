@@ -1,10 +1,70 @@
-.header { }
+.heading-banner { 
+	position: relative;
+	padding:12px 15px;
+	min-height: 250px;
+	background: url(../images/banner-header-01.png) no-repeat 0 0;
+	background-size: cover;
+	@include bp(baby-bear) { 
+		min-height: 300px;
+	}
+	h1 {
+		text-align: right;
+		text-transform: uppercase;
+		padding:30px 0 0 ;
+		position: absolute;
+		right:100px;
+		width: 200px;
+		color:$penn-white;
+		@include bp(baby-bear) {
+			right: 200px;
+			padding:50px 0 0 ;
+			width: auto;
+		}
+	}
+	img {
+		display: inline-block;
+		//	@include transitions;
+		width:100px;
+		max-width: 180px;
+		position: absolute;
+		right: 1%;
+		@include bp(baby-bear) {
+			width: auto;
+			
+		}
+	}
+	p {
+		position: absolute;
+		bottom:-10px;
+		text-align: right;
+		right: 20px;
+		color:$penn-blue-08;
+		font-weight: 100;
+		@include rem(font-size, 1.2rem);
+		@include rem(line-height, 1.5rem);
+		@include bp(baby-bear) {
+			bottom:0;
+		}	
+		@include bp(baby-bear) {
+			@include rem(font-size, 1.4rem);
+			@include rem(line-height, 2rem);
+			right: 200px;
+			bottom: -20px;
+		}
+		@include bp(mama-bear) {
+			@include rem(font-size, 1.6rem);
+			max-width: 60%;
+		}
+	}
+}
 
 /********************
 ** LOGO
 ********************/
 
-.logo { }
+.logo { 
+
+}
 
 
 
@@ -17,6 +77,7 @@
 	height: 100%;
 	.logo {
 		background:url(../images/nav-logo.png) no-repeat 50% 50%;	
+		background-size: 45px;
 		height: 110px;
 		border-bottom: 1px solid $penn-grey-01;
 		padding-bottom: 20px;
@@ -27,22 +88,25 @@
 			a {
 				margin:0 auto;
 				display: block;
-				width: 70px;
+				width: 60px;
 				height:55px;
 				background:url(../images/sprites/nav-sprite.png) no-repeat 0 0;
+				@include bp(baby-bear) {
+					width: 70px;
+				}
 			}
 		}
 		.nav-1 {
-			background-position: 8px 11px;
+			background-position: 11px 11px;
 		}
 		.nav-2 {
-			background-position: 8px -40px;
+			background-position: 11px -40px;
 		}
 		.nav-3 {
 			background-position: 11px -110px;
 		}
 		.nav-4 {
-			background-position: 6px -182px;
+			background-position: 8px -182px;
 		}
 		.nav-5 {
 			background-position: 8px -250px;
